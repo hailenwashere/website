@@ -1,5 +1,27 @@
 ---
 
+import '../styles/global.css';
+import Header from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = "About Me"
+const profile = {
+    firstName: "Helen",
+    state: "California",
+    country: "United States",
+    year: "3rd",
+    major: "Computer Science",
+    school: "University of California, Los Angeles",
+    hobbies: ["drawing", "badminton", "listening to music"]
+}
+
+const proglangs = ["Python", "JavaScript", "C++"]
+const skills = ["HTML", "CSS", "React", "TypeScript", "Flask", "SQL", "REST API", "GraphQL", "bash", "Linux", "Python ML libraries (sklearn, PyTorch)", "OpenGL", "OpenCV"]
+const tools = ["Qt", "Docker", "Postman", "Version Control (Git/GitHub/GitLabs)", "Kubernetes", "Datadog"]
+
+const skillColor = "navy"
+const fontWeight = "bold"
+const textCase = ""
 ---
 
 <html lang="en">
@@ -8,15 +30,48 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
+        <style define:vars={{skillColor, fontWeight, textCase}}>
+            h1 {
+              color: purple;
+              font-size: 4rem;
+            }
+
+            .skill {
+                color: var(--skillColor);
+                font-weight: var(--fontWeight);
+                text-transform: var(--textCase);
+            }
+        </style>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="blog">Blog</a>
+        <Header />
 
-		<h1>About Me</h1>
+		<h1>{pageTitle}</h1>
         <h2>Helen Feng</h2>
-        <p>to be updated!</p>
+        <h3>Introduction</h3>
+        <ul>
+            <li>My name is {profile.firstName}.</li>
+            <li>I live in {profile.state}, {profile.country} and I'm currently an upcoming {profile.year} year at {profile.school}.</li>
+            {profile.hobbies.length >= 2 &&
+                <li>Two of my hobbies are: {profile.hobbies[0]} and {profile.hobbies[1]}</li>
+            }
+            <li>I am fluent English and Chinese (Mandarin)! I'm also trying to learn Japanese.</li>
+        </ul>
+        <h3>Skills</h3>
+        <p>Here are the programming languages I use most often</p>
+        <ul>
+            {proglangs.map((lang) => <li>{lang}</li>)}
+        </ul>
+        <p>Here's a list of skills I'm familiar with:</p>
+        <ul>
+            {skills.map((skill) => <li class="skill">{skill}</li>)}
+        </ul>
+        <p>And here are some tool's I've worked with:</p>
+        <ul>
+            {tools.map((tool) => <li>{tool}</li>)}
+        </ul>
+
+        <Footer />
 	</body>
 </html>

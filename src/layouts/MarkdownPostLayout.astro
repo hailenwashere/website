@@ -1,0 +1,15 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+const date = new Date(frontmatter.pubDate)
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sunday"]
+var noTime = `${days[date.getDay()]} ${frontmatter.pubDate.toString().slice(0,10)}`;
+---
+<BaseLayout pageTitle={frontmatter.title}>
+    <p>Written by {frontmatter.author}</p>
+    <p>Published on: {noTime}</p>
+    <p><em>{frontmatter.description}</em></p>
+    <!-- <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} /> -->
+
+    <slot />
+</BaseLayout>

@@ -1,0 +1,33 @@
+---
+import BlogPost from '../../components/BlogPost.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// returns list of objs containing params (what to call page route) and any props to pass to page
+export async function getStaticPaths() {
+    const allPosts : any = await Astro.glob('../posts/*.md');
+
+    // for each post, get the tags and flatten them into an array, and make a set out of them
+    // then spread them into unique Tags using ... operator and turn whole thing into array
+    const uniqueTags = [...new Set(allPosts.map((post : any) => post.frontmatter.tags).flat())]
+    console.log(uniqueTags)
+
+    return uniqueTags.map((tag) => {
+        const filteredPosts = allPosts.filter((post: any ) => post.frontmatter.tags.includes(tag));
+            return {
+                params: { tag }, // what to call each page route
+                props: { posts: filteredPosts }
+            }; 
+    })
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+// const filteredPosts = posts.filter((post : any) => post.frontmatter.tags?.includes(tag))
+// note that this file had [tag] in square brackets. Astro
+---
+<BaseLayout pageTitle={tag}>
+    <p>Posts tagged with {tag}</p>
+    <ul>
+        {posts.map((post : any) => <BlogPost url={post.url} title={post.frontmatter.title}/>)}
+    </ul>
+</BaseLayout>

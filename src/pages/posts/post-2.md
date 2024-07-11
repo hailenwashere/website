@@ -7,7 +7,7 @@ author: 'Helen Feng'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "work"]
+tags: ["work", "learning"]
 ---
 
 ## Thoughts On First Day

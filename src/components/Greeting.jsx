@@ -2,8 +2,8 @@ import { useState } from 'preact/hooks';
 
 const Greeting = ({messages}) => {
 
-    const randomMessage = () => messages[(Math.floor(Math.randdom() * messages.length))]
-    const [greeting, setGreeting] = usestate(messages[0])
+    const randomMessage = () => messages[(Math.floor(Math.random() * messages.length))]
+    const [greeting, setGreeting] = useState(messages[0])
 
     return (
         <div>

@@ -9,11 +9,12 @@ const pageTitle = "Hello World!"
 <style>
 	.aboutme {
 		float: right;
-		margin: 5px;
+		margin-left: 20px;
+		border-left: solid pink;
 	}
 	.profilepiccontainer {
 		float: right;
-		margin: 5px;
+		margin-left: 30px;
 	}
 
 	.profilepicture {
@@ -23,25 +24,39 @@ const pageTitle = "Hello World!"
 		max-height: 20vh;
 		border-radius: 10px;
 	}
+
 </style>
 
 <BaseLayout pageTitle={pageTitle}>
 	<!-- <Greeting client:load messages={["Hi", "Hello", "Hey there", "Good day", "Greetings"]}/>  -->
-	<div class="aboutme">
-		<div class="profilepiccontainer">
-			<Image src={ profilepicture } alt="A photo of me!" class="profilepicture"/>
+	<section class="segment">
+		<div class="aboutme">
+			<div class="profilepiccontainer">
+				<Image src={ profilepicture } alt="A photo of me!" class="profilepicture"/>
+				<h2>Helen Feng</h2>
+				<p>3rd year CS major @ UCLA</p>
+			</div>
 		</div>
-		<h2>Helen Feng</h2>
-		<p>3rd year CS major @ UCLA</p>
-	</div>
+	
+		<div class="blurb">
+			<p>
+				I'm Helen, a third year at UCLA (University of California, Los Angeles) majoring in Computer Science at the Samueli School of Engineering. 
+				I've accumulated experience in full-stack development and machine learning through my years of studying Computer Science. 
+			</p>
+			<p>
+				When I'm not learning about tech and working on projects, you can find me drawing, dancing in KPOP dance covers at KBM UCLA, and playing badminton in the 
+				UCLA Badminton Club!
+			</p>
+			<p>
+				Thanks for visiting my website!
+			</p>
+		</div>
+	</section>
 
-	<p>
-		I'm Helen, a third year at UCLA (University of California, Los Angeles) majoring in Computer Science at the Samueli School of Engineering. 
-		I've accumulated experience in full-stack development and machine learning through my years of studying Computer Science. 
-	</p>
-	<p>
-		When I'm not learning about tech and working on projects, you can find me drawing, dancing in KPOP dance covers at KBM UCLA, and playing badminton in the 
-		UCLA Badminton Club!
-	</p>
+	<section class="segment" > 
+		
+	</section>
+
+
 
 </BaseLayout>

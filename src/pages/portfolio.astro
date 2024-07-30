@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
 
-const pageTitle = "About"
+const pageTitle = "Portfolio - under development!"
 
 const profile = {
     firstName: "Helen",
@@ -13,9 +13,9 @@ const profile = {
     hobbies: ["drawing", "badminton", "listening to music"]
 }
 
-const proglangs = ["Python", "JavaScript", "C++"]
-const skills = ["HTML", "CSS", "React", "TypeScript", "Flask", "SQL", "REST API", "GraphQL", "bash", "Linux", "Python ML libraries (sklearn, PyTorch)", "OpenGL", "OpenCV"]
-const tools = ["Qt", "Postman", "Version Control (Git/GitHub/GitLabs)"]
+const proglangs = ["Python", "JavaScript/Typescript", "C++/C", "HTML", "CSS", "SQL"]
+const skills = ["React", "Flask", "GraphQL", "Linux", "Python ML libraries (sklearn, PyTorch)", "OpenGL", "OpenCV"]
+const tools = ["Qt", "Postman", "Version Control (Git/GitHub/GitLabs)", "Bash", "AWS"]
 
 ---
 
@@ -35,7 +35,7 @@ const tools = ["Qt", "Postman", "Version Control (Git/GitHub/GitLabs)"]
     <ul>
         {proglangs.map((lang) => <li>{lang}</li>)}
     </ul>
-    <p>Here's a list of skills I'm familiar with:</p>
+    <p>Here's a list of frameworks/libraries I'm familiar with:</p>
     <ul>
         {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
@@ -43,4 +43,6 @@ const tools = ["Qt", "Postman", "Version Control (Git/GitHub/GitLabs)"]
     <ul>
         {tools.map((tool) => <li>{tool}</li>)}
     </ul>
+
+    <h2>Stay tuned for more information about projects I am working on or have completed!</h2>
 </BaseLayout>

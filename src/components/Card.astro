@@ -1,0 +1,167 @@
+---
+// const projects = [
+//     {
+//         name: "https://main--hxfeng.netlify.app/",
+//         subtitle: "This Website!",
+//         description: "lorem ipsum blah blah blah",
+//         year: 2024,
+//         url:
+//         github: "https://github.com/hailenwashere/website",
+//     },
+// ];
+
+const { name, url, subtitle, description, year, github } = Astro.props
+---
+
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        line-height: 1.2;
+    }
+
+    .card {
+        flex: 1 1 50%;
+        position: relative;
+        border: 1px solid #efefef;
+        box-shadow: 2px 6px 25px rgba(0, 0, 0, .11);
+        transition: all .3s ease;
+        position: relative;
+        margin: 30px;
+    }
+
+    .card:hover {
+        box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-content {
+        padding: 30px 30px 110px;
+    }
+
+    .card-details {
+        position: absolute;
+        border-top: 1px solid #efefef;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .card-details-inner {
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        margin: 0 30px;
+        padding: 30px 0;
+    }
+
+    .card-details-buttons {
+        justify-content: left;
+        display: flex;
+    }
+
+    .card h1 {
+        margin: 0;
+        color: #444444;
+    }
+
+    .card p {
+        margin: 0 0 30px;
+        color: #666666;
+    }
+
+    .subtitle {
+        margin: 0 0 15px;
+        color: rgb(236, 98, 121);
+        font-weight: 700;
+    }
+
+    .card a {
+        color: rgb(236, 98, 121);
+        text-decoration: none;
+    }
+
+    .card .button {
+        display: block;
+        font-size: 1rem;
+        background: rgb(236, 98, 121);
+        border: 1px solid rgb(236, 98, 121);
+        padding: 0.75rem 1rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .card-image {
+        height: 200px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .button:hover, .button:focus {
+        background: darken(pink, 40%);
+        border: 1px solid darken(pink, 40%);
+    }
+
+    .year {
+        text-align: center;
+        float: right;
+        padding: 30px 0;
+        margin: 0 30px;
+    }
+
+    .options a {
+        color: #666666;
+    }
+
+    .options a:hover {
+        color: #222222;
+    }
+
+    .fa {
+        margin-right: .25rem;
+    }
+
+</style>
+<div class="card">
+    <div class="card-content">
+        <h1>{ name }</h1>
+        <div class="subtitle">{ subtitle }</div>
+        <p>{ description }</p>
+
+        <div class="card-details">
+            <div class="card-details-inner">
+                <div class="card-details-buttons">
+                    {url && <div class="link">
+                        <a
+                            class="button"
+                            href={ url }
+                            target="_blank"
+                            >Link</a
+                        >
+                    </div>}
+
+                    {github && <div class="source-code">
+                        <a
+                            class="button"
+                            href={ github }
+                            target="_blank"
+                            >Source</a
+                        >
+                    </div>}
+                </div>
+                
+            </div>
+           
+            <div class="year">
+                <p>{ year }</p>     
+            </div> 
+        </div>
+    </div>
+</div>

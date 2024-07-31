@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
+import Card from "../components/Card.astro"
 
 const pageTitle = "Portfolio - under development!"
 
@@ -18,6 +19,11 @@ const skills = ["React", "Flask", "GraphQL", "Linux", "Python ML libraries (skle
 const tools = ["Qt", "Postman", "Version Control (Git/GitHub/GitLabs)", "Bash", "AWS"]
 
 ---
+<style>
+    .projects-section {
+        flex: 1 1 50%;
+    }
+</style>
 
 <BaseLayout pageTitle={pageTitle}>
     <h2>Helen Feng</h2>
@@ -45,4 +51,17 @@ const tools = ["Qt", "Postman", "Version Control (Git/GitHub/GitLabs)", "Bash", 
     </ul>
 
     <h2>Stay tuned for more information about projects I am working on or have completed!</h2>
+    
+    <section class="projects-section">
+        <Card 
+            name="https://hxfeng.netlify.app/" 
+            url="https://hxfeng.netlify.app/" 
+            subtitle="This Website!"
+            description="Used Astro with JavaScript, HTML, CSS to create this website. I'll be adding more content soon!"
+            year=2024
+            github="https://github.com/"
+        />
+    </section>
+    
+
 </BaseLayout>

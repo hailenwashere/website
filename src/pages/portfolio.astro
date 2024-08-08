@@ -18,6 +18,7 @@ const proglangs = ["Python", "JavaScript/Typescript", "C++/C", "HTML", "CSS", "S
 const skills = ["React", "Flask", "GraphQL", "Linux", "Python ML libraries (sklearn, PyTorch)", "OpenGL", "OpenCV"]
 const tools = ["Qt", "Postman", "Version Control (Git/GitHub/GitLabs)", "Bash", "AWS"]
 
+import { projects } from "../projects.js"
 ---
 <style>
     .projects-section {
@@ -53,14 +54,14 @@ const tools = ["Qt", "Postman", "Version Control (Git/GitHub/GitLabs)", "Bash", 
     <h2>Stay tuned for more information about projects I am working on or have completed!</h2>
     
     <section class="projects-section">
-        <Card 
-            name="https://hxfeng.netlify.app/" 
-            url="https://hxfeng.netlify.app/" 
-            subtitle="This Website!"
-            description="Used Astro with JavaScript, HTML, CSS to create this website. I'll be adding more content soon!"
-            year=2024
-            github="https://github.com/hailenwashere/website"
-        />
+        {projects.map((project) => <Card 
+            name = {project.name}
+            url = {project.url}
+            subtitle = {project.subtitle}
+            description = {project.description}
+            year = {project.year}
+            github = {project.github}
+        />)}
     </section>
     
 

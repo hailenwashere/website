@@ -11,7 +11,7 @@ export const projects = [
         name: "Our Fridge",
         url: "https://docs.google.com/presentation/d/1S0mvZn8IOAFx1zNTJKhgl6p0fosIClARI3vkAeLVTZE/edit#slide=id.g93a1b1e5a5_0_328", 
         subtitle: "Simple ingredient sharing app to fight food waste",
-        description: "A project created in Hack with a Pro 2024 that won 3rd place overall. OurFridge allows users to share leftover ingredients with their friends through a communal fridge which can be accessed through a unique code. ",
+        description: "A project created in Hack with a Pro 2024 that won 3rd place overall. OurFridge allows users to share leftover ingredients with their friends through a communal fridge which can be accessed through a unique code. Made with React, Flask, and Firebase",
         details: [
             "Used React.js to implement ingredient requesting and fridge display (organized by food category)",
             "Uses email notifications to let a friend know that a user wants an ingredient",
@@ -25,7 +25,7 @@ export const projects = [
         name: "FocusView",
         url: "https://docs.google.com/presentation/d/1DxxgkZjpErOBOf9MRxZmQdBL5_cyuvxsRUXvfZBGqf0/edit?usp=sharing", 
         subtitle: "A web app for combatting bad habits while working",
-        description: "A project created with UCLA Creative Labs in Spring 2024. To help students control their bad working habits such as bad posture, phone usage, and more, FocusView tracks user eye movement and posture data in each session with a pomodoro timer. ",
+        description: "A project created with UCLA Creative Labs in Spring 2024. To help students control their bad working habits such as bad posture, phone usage, and more, FocusView tracks user eye movement and posture data in each session with a pomodoro timer. Made with React, Firebase, OpenCV, JavaScript, and Python",
         details: [
             "Used Firebase to implement a smooth user authentication experience",
             "Used React.js to create the frontend of the app, including the user profile, a session timer, and login pages."
@@ -37,7 +37,7 @@ export const projects = [
         name: "Clearify",
         url: "https://chromewebstore.google.com/detail/clearify/dfngmknjomojmdmnockpdpmpnbbhibfi", 
         subtitle: "A skincare retail browser extension",
-        description: "A project created with UCLA Creative Labs in Fall 2023/Winter 2024. Clearify is a cosmetic shopping browser extension that scans a product’s ingredients list as you shop and checks if a cosmetic is safe for your skin, e.g. silicone-free, alcohol-free, or FA-safe (fungal acne-safe), using the community-trusted EWG Skin Deep Database. ",
+        description: "A project created with UCLA Creative Labs in Fall 2023/Winter 2024. Clearify is a cosmetic shopping browser extension that scans a product’s ingredients list as you shop and checks if a cosmetic is safe for your skin, e.g. silicone-free, alcohol-free, or FA-safe (fungal acne-safe), using the community-trusted EWG Skin Deep Database. Made with Manifest V3, HTML, CSS, and JavaScript",
         details: [
             "Used Manifest V3, JavaScript, HTML, and CSS to add highlights and property counts to the extension that matched the sleek design and feel of Clearify."
         ],
@@ -48,7 +48,7 @@ export const projects = [
         name: "UIRA @ UCLA Landing Page",
         url: "https://uiraatucla.s3.us-west-1.amazonaws.com/index.html", 
         subtitle: "Landing page for the UIRA @ UCLA",
-        description: "A landing page created for the Undergraduate Interdiscipliinary Research Association, a club that I am webmaster for! The club hosts an annual poster day for undergraduates to share their research, and is advised by the Assistant Director of Undergraduate Resarch Center for Science at UCLA.",
+        description: "A landing page created for the Undergraduate Interdiscipliinary Research Association, a club that I am webmaster for! The club hosts an annual poster day for undergraduates to share their research, and is advised by the Assistant Director of Undergraduate Resarch Center for Science at UCLA. Made with HTML, CSS, and JavaScript, and hosted on AWS",
         details: [
             "Used HTML, CSS, and JavaScript to create a website for the Undergraduate Interdisciplinary Research Association (UIRA) at UCLA, hosted on Amazon Web Services (AWS)",
             "Designed and prototyped website on Figma",
@@ -87,7 +87,7 @@ export const projects = [
     {
         name: "Swear Jar Bot",
         subtitle: "A virtual swear jar in the form of a Discord bot",
-        description: "A Discord bot made with Discord's Python API with friend during quarantine to count the number of times someone has texted a swear word in our groupchat. The bot ran independently by being hosted on a virtual server, and maintained a running tally of how much each person swore.",
+        description: "A Discord bot made with Discord's Python API with friend during quarantine to count the number of times someone has texted a swear word in our groupchat. The bot ran independently by being hosted on a virtual server, and maintained a running tally of how much each person swore. Made with Python (Discord API)",
         details: [
             "Used txt files for simple data maintenance",
             "Used Discord's Python API and asyncio to link our code to Discord",
@@ -99,7 +99,7 @@ export const projects = [
     {
         name: "Among Us Bot",
         subtitle: "A Discord bot to resend Among Us game code",
-        description: "My first project! Included here with the swear jar as part of the hall of fame. A Discord bot using Discord's Python API to resend the Among Us game code upon request, which often got buried under messages and other bot commands.",
+        description: "My first project! Included here with the swear jar as part of the hall of fame. A Discord bot using Discord's Python API to resend the Among Us game code upon request, which often got buried under messages and other bot commands. Made with Python (Discord API)",
         details: [
             "Used txt file to store the code",
             "Used Discord's Python API and asyncio to link code to Discord",

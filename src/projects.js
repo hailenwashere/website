@@ -31,4 +31,12 @@ export const projects = [
         year: 2024,
         github: "https://github.com/ArjunNair17/FocusView",
     },
+    {
+        name: "Clearify",
+        url: "https://chromewebstore.google.com/detail/clearify/dfngmknjomojmdmnockpdpmpnbbhibfi", 
+        subtitle: "A skincare retail browser extension that scans the ingredients list of products as you shop",
+        description: "A project created with UCLA Creative Labs in Fall 2023/Winter 2024. Clearify is a cosmetic shopping browser extension that scans a product’s ingredients list as you shop and checks if a cosmetic is safe for your skin, e.g. silicone-free, alcohol-free, or FA-safe (fungal acne-safe), using the community-trusted EWG Skin Deep Database. I used Manifest V3, JavaScript, HTML, and CSS to add highlights and property counts to the extension that matched the sleek design and feel of Clearify.",
+        year: 2024,
+        github: "https://github.com/ArjunNair17/FocusView",
+    },
 ]

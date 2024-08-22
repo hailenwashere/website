@@ -1,8 +1,8 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro"
-import Card from "../components/Card.astro"
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
 
-const pageTitle = "Portfolio - under development!"
+const pageTitle = "Portfolio - under development!";
 
 const profile = {
     firstName: "Helen",
@@ -11,24 +11,48 @@ const profile = {
     year: "3rd",
     major: "Computer Science",
     school: "University of California, Los Angeles",
-    hobbies: ["drawing", "badminton", "listening to music"]
-}
+    hobbies: ["drawing", "badminton", "listening to music"],
+};
+const proglangs = [
+    "Python",
+    "JavaScript/Typescript",
+    "C++/C",
+    "HTML",
+    "CSS",
+    "SQL",
+];
+const skills = [
+    "React",
+    "Flask",
+    "GraphQL",
+    "Linux",
+    "Python ML libraries (sklearn, PyTorch)",
+    "OpenGL",
+    "OpenCV",
+];
+const tools = [
+    "Qt",
+    "Postman",
+    "Version Control (Git/GitHub/GitLabs)",
+    "Bash",
+    "AWS",
+];
 
-const proglangs = ["Python", "JavaScript/Typescript", "C++/C", "HTML", "CSS", "SQL"]
-const skills = ["React", "Flask", "GraphQL", "Linux", "Python ML libraries (sklearn, PyTorch)", "OpenGL", "OpenCV"]
-const tools = ["Qt", "Postman", "Version Control (Git/GitHub/GitLabs)", "Bash", "AWS"]
+import { projects } from "../projects.js";
 
-import { projects } from "../projects.js"
 ---
+
 <style>
     .projects-section {
-        flex: 1 1 50%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+       
     }
 </style>
 
 <BaseLayout pageTitle={pageTitle}>
-    <h2>Helen Feng</h2>
-    <h3>Introduction</h3>
+    <!-- <h2>Helen Feng</h2> -->
+    <!-- <h3>Introduction</h3>
     <ul>
         <li>My name is {profile.firstName}.</li>
         <li>I live in {profile.state}, {profile.country} and I'm currently an upcoming {profile.year} year at {profile.school}.</li>
@@ -49,20 +73,25 @@ import { projects } from "../projects.js"
     <p>And here are some tool's I've worked with:</p>
     <ul>
         {tools.map((tool) => <li>{tool}</li>)}
-    </ul>
+    </ul> -->
 
-    <h2>Stay tuned for more information about projects I am working on or have completed!</h2>
-    
+    <h2>
+        Stay tuned for more information about projects I am working on or have
+        completed!
+    </h2>
+
     <section class="projects-section">
-        {projects.map((project) => <Card 
-            name = {project.name}
-            url = {project.url}
-            subtitle = {project.subtitle}
-            description = {project.description}
-            year = {project.year}
-            github = {project.github}
-        />)}
+        {
+            projects.map((project) => (
+                <Card
+                    name={project.name}
+                    url={project.url}
+                    subtitle={project.subtitle}
+                    description={project.description}
+                    year={project.year}
+                    github={project.github}
+                />
+            ))
+        }
     </section>
-    
-
 </BaseLayout>

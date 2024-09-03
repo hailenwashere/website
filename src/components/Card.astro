@@ -10,7 +10,7 @@
 //     },
 // ];
 
-const { name, url, subtitle, description, year, github } = Astro.props
+const { name, url, subtitle, description, year, github, img } = Astro.props
 ---
 
 <style>
@@ -138,8 +138,14 @@ const { name, url, subtitle, description, year, github } = Astro.props
         margin-right: .25rem;
     }
 
+    .card-image {
+        height:200px;
+        border-bottom: 1px solid #efefef;
+    }
+
 </style>
 <div class="card">
+    {img && <div class="card-image" style={`background-image: url(${img})`}></div>}
     <div class="card-content">
         <h1>{ name }</h1>
         <div class="subtitle">{ subtitle }</div>

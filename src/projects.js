@@ -4,7 +4,8 @@ export const projects = [
         subtitle: "Prework Assignment for CodePath WEB103",
         description: "CreatorVerse is a simple CRUD web app using React and Vite on the frontend and Supabase as a database. In this app, users can see/edit/remove/create cards displaying creators in the database, each with an image, links to socials, and more information. ",
         year: 2024,
-        github: "https://github.com/hailenwashere/codepathprework"
+        github: "https://github.com/hailenwashere/codepathprework",
+        img: "src/images/projects/creatorverse.png"
     },
     {
         name: "https://hxfeng.netlify.app/",
@@ -12,7 +13,20 @@ export const projects = [
         subtitle: "This Website!",
         description: "Used Astro with JavaScript, HTML, CSS to create this website. I'll be adding more content soon!",
         year: 2024,
-        github: "https://github.com/hailenwashere/website"
+        github: "https://github.com/hailenwashere/website",
+    },
+    {
+        name: "FocusView",
+        url: "https://docs.google.com/presentation/d/1DxxgkZjpErOBOf9MRxZmQdBL5_cyuvxsRUXvfZBGqf0/edit?usp=sharing", 
+        subtitle: "A web app for combatting bad habits while working",
+        description: "A project created with UCLA Creative Labs in Spring 2024. To help students control their bad working habits such as bad posture, phone usage, and more, FocusView tracks user eye movement and posture data in each session with a pomodoro timer. Made with React, Firebase, OpenCV, JavaScript, and Python",
+        details: [
+            "Used Firebase to implement a smooth user authentication experience",
+            "Used React.js to create the frontend of the app, including the user profile, a session timer, and login pages."
+        ],
+        year: 2024,
+        github: "https://github.com/ArjunNair17/FocusView",
+        img: "src/images/projects/focusview.png"
     },
     {
         name: "Our Fridge",
@@ -29,18 +43,6 @@ export const projects = [
         github: "https://github.com/hailenwashere/hackwapro"
     },
     {
-        name: "FocusView",
-        url: "https://docs.google.com/presentation/d/1DxxgkZjpErOBOf9MRxZmQdBL5_cyuvxsRUXvfZBGqf0/edit?usp=sharing", 
-        subtitle: "A web app for combatting bad habits while working",
-        description: "A project created with UCLA Creative Labs in Spring 2024. To help students control their bad working habits such as bad posture, phone usage, and more, FocusView tracks user eye movement and posture data in each session with a pomodoro timer. Made with React, Firebase, OpenCV, JavaScript, and Python",
-        details: [
-            "Used Firebase to implement a smooth user authentication experience",
-            "Used React.js to create the frontend of the app, including the user profile, a session timer, and login pages."
-        ],
-        year: 2024,
-        github: "https://github.com/ArjunNair17/FocusView"
-    },
-    {
         name: "Clearify",
         url: "https://chromewebstore.google.com/detail/clearify/dfngmknjomojmdmnockpdpmpnbbhibfi", 
         subtitle: "A skincare retail browser extension",
@@ -50,6 +52,7 @@ export const projects = [
         ],
         year: 2024,
         github: "https://github.com/ArjunNair17/FocusView",
+        img: "src/images/projects/clearify.png"
     },
     {
         name: "UIRA @ UCLA Landing Page",
@@ -63,6 +66,7 @@ export const projects = [
         ],
         year: 2023,
         github: "https://github.com/ArjunNair17/FocusView",
+        img: "src/images/projects/uiralogo.png"
     },
     {
         name: "My Terrarium",

@@ -1,5 +1,12 @@
 export const projects = [
     {
+        name: "CreatorVerse",
+        subtitle: "Prework Assignment for CodePath WEB103",
+        description: "CreatorVerse is a simple CRUD web app using React and Vite on the frontend and Supabase as a database. In this app, users can see/edit/remove/create cards displaying creators in the database, each with an image, links to socials, and more information. ",
+        year: 2024,
+        github: "https://github.com/hailenwashere/codepathprework"
+    },
+    {
         name: "https://hxfeng.netlify.app/",
         url: "https://hxfeng.netlify.app/", 
         subtitle: "This Website!",

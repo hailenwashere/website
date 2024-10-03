@@ -29,6 +29,7 @@ const { name, url, subtitle, description, year, github, img } = Astro.props
         transition: all .3s ease;
         position: relative;
         margin: 30px;
+        border-radius: 15px;
     }
 
     .card:hover {
@@ -92,6 +93,7 @@ const { name, url, subtitle, description, year, github, img } = Astro.props
         font-size: 1rem;
         background: rgb(236, 98, 121);
         border: 1px solid rgb(236, 98, 121);
+        border-radius: 15px;
         padding: 0.75rem 1rem;
         color: white;
         text-decoration: none;
@@ -139,13 +141,16 @@ const { name, url, subtitle, description, year, github, img } = Astro.props
     }
 
     .card-image {
-        height:200px;
+        height: 25%;
+        width: 100%;
         border-bottom: 1px solid #efefef;
+        object-fit: cover;
     }
 
 </style>
 <div class="card">
-    {img && <div class="card-image" style={`background-image: url(${img})`}></div>}
+    <!-- {img && <Image src={img} alt="Photo of project" class="card-image"/>} -->
+    <!-- {img && <img src={`/src/images/projects/${img}`} class="card-image"> } -->
     <div class="card-content">
         <h1>{ name }</h1>
         <div class="subtitle">{ subtitle }</div>
@@ -159,8 +164,7 @@ const { name, url, subtitle, description, year, github, img } = Astro.props
                             class="button"
                             href={ url }
                             target="_blank"
-                            >Link</a
-                        >
+                            >Link</a>
                     </div>}
 
                     {github && <div class="source-code">
@@ -168,8 +172,7 @@ const { name, url, subtitle, description, year, github, img } = Astro.props
                             class="button"
                             href={ github }
                             target="_blank"
-                            >Source</a
-                        >
+                            >Source</a>
                     </div>}
                 </div>
                 

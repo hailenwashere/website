@@ -5,7 +5,7 @@ export const projects = [
         description: "CreatorVerse is a simple CRUD web app using React and Vite on the frontend and Supabase as a database. In this app, users can see/edit/remove/create cards displaying creators in the database, each with an image, links to socials, and more information. ",
         year: 2024,
         github: "https://github.com/hailenwashere/codepathprework",
-        img: "src/images/projects/creatorverse.png"
+        img: "creatorverse.png"
     },
     {
         name: "https://hxfeng.netlify.app/",
@@ -26,7 +26,7 @@ export const projects = [
         ],
         year: 2024,
         github: "https://github.com/ArjunNair17/FocusView",
-        img: "src/images/projects/focusview.png"
+        img: "focusview.png"
     },
     {
         name: "Our Fridge",
@@ -52,7 +52,7 @@ export const projects = [
         ],
         year: 2024,
         github: "https://github.com/ArjunNair17/FocusView",
-        img: "src/images/projects/clearify.png"
+        img: "clearify.png"
     },
     {
         name: "UIRA @ UCLA Landing Page",
@@ -65,21 +65,21 @@ export const projects = [
             "Had work presented to the Assistant Director of Undergraduate Research Center for Sciences at UCLA and provided over 60 participating research projects an opportunity to present their research"
         ],
         year: 2023,
-        github: "https://github.com/ArjunNair17/FocusView",
-        img: "src/images/projects/uiralogo.png"
+        github: "https://github.com/hailenwashere/uira-website",
+        img: "uiralogo.png"
     },
     {
         name: "My Terrarium",
         url: "", 
         subtitle: "Ambient noise and music mixer",
-        description: "A web application created in a team for the class CS35L (Software Construction), taught by Professor Eggert in Spring 2023. My Terrarium allows users to mix Spotify playlists with uploaded background audio to create their ideal \"terrarium\" of sound. Developed with React, PostgreSQL, and Flask, ",
+        description: "A web application created in a team for the class CS35L (Software Construction), taught by Professor Eggert in Spring 2023. My Terrarium allows users to mix Spotify playlists with uploaded background audio to create their ideal \"terrarium\" of sound. Developed with React, PostgreSQL, and Flask",
         details: [
             "Used Spotify API and PostgreSQL to fetch and store user listening data",
             "Used React.js to embed Spotify playlists and allow users to customize their audio experience",
             "Designed of UI of application (See presentation slides at: https://tinyurl.com/4bt6e6yc)"
         ],
         year: 2023,
-        github: "https://github.com/ArjunNair17/FocusView",
+        github: "https://github.com/ryanchaiyakul/cs35l_project",
     },
     {
         name: "Emotion Detector",

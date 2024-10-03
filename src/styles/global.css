@@ -77,7 +77,8 @@ p {
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: pink;
+    background-color: rgb(255, 231, 235);
+    border-radius: 15px;
 }
 
 .expanded {

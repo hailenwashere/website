@@ -1,5 +1,12 @@
 export const projects = [
     {
+        name: "Clothesline",
+        url: "https://docs.google.com/presentation/d/1GiTIs4XaU7D7hcxe3UYGyC7o2Jv4rn5anriQhi78Lt8/edit?usp=sharing",
+        subtitle: "A clothes selling/lending platform for UCLA students",
+        description: "A mobile app to promote sustainable fashion by enabling easy and trusted clothes lending/renting between students on campus at UCLA. Used Firebase to implement email/password authentication, allowing Clothesline to be launched on Apple Test Flight and to be reviewed to be launched on the App Store, and Flutter to build a smooth and visually appealing user interface.",
+        year: 2024,
+    },
+    {
         name: "CreatorVerse",
         subtitle: "Prework Assignment for CodePath WEB103",
         description: "CreatorVerse is a simple CRUD web app using React and Vite on the frontend and Supabase as a database. In this app, users can see/edit/remove/create cards displaying creators in the database, each with an image, links to socials, and more information. ",

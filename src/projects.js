@@ -1,4 +1,14 @@
+// name, url (optional), subtitle, description, details (optional), year, github (optional), img (optional)
+
 export const projects = [
+    {
+        name: "Rose Garden",
+        url: "https://www.figma.com/deck/Vj6YG6sxcABZPSEc6Ry2dA/FIGMA-SLIDES?node-id=1-4679&t=prQs3GuRr1QQ5lRm-1",
+        subtitle: "A calming journaling format that encourages reflection",
+        description: "A mobile app that incentivizes users to journal regularly and reflect on their day using the \"rose, bud, thorn\" method with a virtual garden. Made with React Native, Expo SQLite, and Drizzle ORM to implement the journaling workflow, freeform canvas style journal entries, and a virtual garden that grows as users journal more.",
+        year: 2025,
+        github: "https://github.com/rose-garden-team/rose-garden",
+    },
     {
         name: "Clothesline",
         url: "https://docs.google.com/presentation/d/1GiTIs4XaU7D7hcxe3UYGyC7o2Jv4rn5anriQhi78Lt8/edit?usp=sharing",
